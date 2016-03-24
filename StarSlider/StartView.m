@@ -80,7 +80,7 @@ alpha:1.0f]
         [self dismiss:self withDuration:0.15];
    
     }else{
-        
+ 
         if ([_titleLabel.text isEqualToString:@"滑动以评分"] || [_titleLabel.text intValue] == 0) {
             
             _titleLabel.text = @"评分必须大于0";
@@ -95,6 +95,7 @@ alpha:1.0f]
             self.startNumber(_titleLabel.text);
         }
         
+         [self dismiss:self withDuration:0.15];
     }
     
 }
